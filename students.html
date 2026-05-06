@@ -6,7 +6,7 @@
   <title>DC Hostel | Students</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,35 +15,41 @@
     <div class="container nav-inner">
       <a class="logo" href="index.html" aria-label="DC Hostel home">
         <span class="logo-mark">DC</span>
-        <span>DC Hostel</span>
+        <span data-i18n="nav.logo">DC Hostel</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="index.html">Home</a>
-        <a href="students.html" class="active">Students</a>
-        <a href="roommates.html">Roommates</a>
-        <a href="results.html">Results</a>
-        <a href="hostel.html">Hostel Info</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="students.html" class="active" data-i18n="nav.students">Students</a>
+        <a href="roommates.html" data-i18n="nav.roommates">Roommates</a>
+        <a href="results.html" data-i18n="nav.results">Results</a>
+        <a href="hostel.html" data-i18n="nav.hostel">Hostel Info</a>
       </nav>
-      <button class="theme-toggle" id="toggle" type="button" aria-label="Toggle dark mode">
-        <span aria-hidden="true">&#9789;</span>
-      </button>
+      <div class="nav-actions">
+        <div class="language-switch" aria-label="Language selector">
+          <button type="button" data-lang-option="en">English</button>
+          <button type="button" data-lang-option="bn">বাংলা</button>
+        </div>
+        <button class="theme-toggle" id="toggle" type="button" aria-label="Toggle dark mode">
+          <span aria-hidden="true">&#9789;</span>
+        </button>
+      </div>
     </div>
   </header>
 
   <main class="page-main">
     <section class="page-hero compact">
       <div class="container" data-aos="fade-up">
-        <p class="eyebrow">Students</p>
-        <h1>Student Directory</h1>
-        <p>Profiles, contact details, rooms, goals and academic summary in one searchable list.</p>
+        <p class="eyebrow" data-i18n="common.students">Students</p>
+        <h1 data-i18n="students.title">Student Directory</h1>
+        <p data-i18n="students.subtitle">Profiles, contact details, rooms, goals and academic summary in one searchable list.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
         <div class="search-wrap" data-aos="fade-up">
-          <label for="studentSearch" class="sr-only">Search students</label>
-          <input id="studentSearch" class="search-input" type="search" placeholder="Search by name, room, phone, blood group or address">
+          <label for="studentSearch" class="sr-only" data-i18n="common.searchStudents">Search students</label>
+          <input id="studentSearch" class="search-input" type="search" placeholder="Search by name, room, phone, blood group or address" data-i18n-placeholder="common.searchPlaceholderFull">
         </div>
         <div class="student-grid" id="studentGrid"></div>
       </div>
@@ -52,8 +58,8 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <p>&copy; 2026 DC Hostel. Student information demo.</p>
-      <p>Photo credits: Wikimedia Commons CC BY-SA 4.0; demo portraits from Random User.</p>
+      <p data-i18n="footer.demo">&copy; 2026 DC Hostel. Student information demo.</p>
+      <p data-i18n="footer.credits">Photo credits: Wikimedia Commons CC BY-SA 4.0; demo portraits from Random User.</p>
     </div>
   </footer>
 

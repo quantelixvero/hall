@@ -49,6 +49,10 @@ body {
   transition: background 0.25s ease, color 0.25s ease;
 }
 
+body[data-lang="bn"] {
+  font-family: "Hind Siliguri", "Inter", Arial, sans-serif;
+}
+
 img {
   display: block;
   width: 100%;
@@ -161,6 +165,54 @@ body:not([data-page="home"]) .nav-links a {
 .nav-links a.active {
   color: var(--accent);
   opacity: 1;
+}
+
+.nav-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.language-switch {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 64px);
+  height: 42px;
+  padding: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.language-switch button {
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 800;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.language-switch button.active {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+body:not([data-page="home"]) .language-switch,
+.navbar.scrolled .language-switch {
+  background: var(--surface-strong);
+  border-color: var(--border);
+}
+
+body:not([data-page="home"]) .language-switch button,
+.navbar.scrolled .language-switch button {
+  color: var(--text);
+}
+
+body:not([data-page="home"]) .language-switch button.active,
+.navbar.scrolled .language-switch button.active {
+  color: #ffffff;
 }
 
 .theme-toggle {
@@ -767,6 +819,10 @@ h3 {
     overflow-x: auto;
   }
 
+  .nav-actions {
+    margin-left: auto;
+  }
+
   .nav-inner {
     flex-wrap: wrap;
   }
@@ -804,6 +860,10 @@ h3 {
   .nav-links a {
     font-size: 0.88rem;
     white-space: nowrap;
+  }
+
+  .language-switch {
+    grid-template-columns: repeat(2, 58px);
   }
 
   .hero {
