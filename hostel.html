@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DC Hostel | Hostel Info</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="hostel">
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html" aria-label="DC Hostel home">
+        <span class="logo-mark">DC</span>
+        <span>DC Hostel</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="students.html">Students</a>
+        <a href="roommates.html">Roommates</a>
+        <a href="results.html">Results</a>
+        <a href="hostel.html" class="active">Hostel Info</a>
+      </nav>
+      <button class="theme-toggle" id="toggle" type="button" aria-label="Toggle dark mode">
+        <span aria-hidden="true">&#9789;</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero hostel-hero compact">
+      <div class="container" data-aos="fade-up">
+        <p class="eyebrow">Hostel Info</p>
+        <h1>Hostel Details</h1>
+        <p>History, facilities, environment and location preview.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div data-aos="fade-up">
+            <p class="eyebrow">About</p>
+            <h2>Dhaka College International Hostel</h2>
+            <p class="lead">
+              The hostel is part of Dhaka College's student life, supporting academic focus, room coordination and community living near the New Market academic area.
+            </p>
+            <ul class="nearby-list">
+              <li>New Market</li>
+              <li>Science Lab</li>
+              <li>Dhanmondi</li>
+            </ul>
+          </div>
+          <figure class="hostel-photo" data-aos="zoom-in">
+            <img src="images/hostel-building.jpg" alt="Dhaka College hostel building" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted">
+      <div class="container">
+        <div class="info-grid three">
+          <article class="info-box" data-aos="fade-up">
+            <span class="info-icon">01</span>
+            <h3>History</h3>
+            <p>Dhaka College has a long student-residence tradition connected to its academic legacy.</p>
+          </article>
+          <article class="info-box" data-aos="fade-up" data-aos-delay="140">
+            <span class="info-icon">02</span>
+            <h3>Facilities</h3>
+            <p>Student records, room lists, results, searchable profiles and map-based location preview.</p>
+          </article>
+          <article class="info-box" data-aos="fade-up" data-aos-delay="280">
+            <span class="info-icon">03</span>
+            <h3>Environment</h3>
+            <p>Central, active and academically connected with quick access to key Dhaka landmarks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section location-section">
+      <div class="container">
+        <div class="section-head">
+          <div data-aos="fade-up">
+            <p class="eyebrow">Location</p>
+            <h2>Dhaka College Area</h2>
+          </div>
+          <p class="location-copy" data-aos="fade-up" data-aos-delay="120">
+            Dhaka College International Hostel is located near New Market, Dhaka. It is easily accessible by public transport and is situated in a central academic area.
+          </p>
+        </div>
+        <div class="map-wrap" data-aos="zoom-in">
+          <iframe
+            src="https://www.google.com/maps?q=Dhaka+College&output=embed"
+            width="100%"
+            height="400"
+            style="border:0;"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Dhaka College location map">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 DC Hostel. Student information demo.</p>
+      <p>Photo credits: Wikimedia Commons CC BY-SA 4.0; demo portraits from Random User.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
